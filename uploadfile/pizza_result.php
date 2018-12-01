@@ -24,7 +24,7 @@ foreach($_FILES as $fileKey => $fileArray) {
       echo "there was a problem moving the file";
     }
 
-    $result = file_get_contents("127.0.0.1:5000/?imageFile=" . $_FILES["pizzaImage"]["name"]);
+    $result = file_get_contents("http://127.0.0.1:5000/?imageFile=" . $_FILES["pizzaImage"]["name"]);
     echo $result;
 
   }
