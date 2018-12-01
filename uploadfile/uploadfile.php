@@ -10,9 +10,10 @@
   <header>
     <h3>Upload an image</h3>
   </header>
-  <form method="post" action="pizza_result.php">
+  <form enctype='multipart/form-data' method="post" action="pizza_result.php">
     Select an image: <input type="file" name="pizzaImage"><br><br>
-    <input type="submit">
+    <input type="submit"/>
   </form>
+
 </body>
 </html>
