@@ -17,7 +17,7 @@ foreach($_FILES as $fileKey => $fileArray) {
     // move the file to the folder
     $fileToMove = $_FILES["pizzaImage"]['tmp_name'];
     $destination = "./upload/" . $_FILES["pizzaImage"]["name"];
-    if (@move_uploaded_file($fileToMove, $destination)) {
+    if (move_uploaded_file($fileToMove, $destination)) {
       echo "The file upload successfully";
     }
     else {
